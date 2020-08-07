@@ -1,6 +1,6 @@
 {
   "name": "azux",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A small state management that is inspired on unstated-next",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
@@ -21,7 +21,9 @@
     "state management",
     "state manager",
     "redux",
-    "state"
+    "state",
+    "unstated",
+    "unstated-next"
   ],
   "author": "",
   "license": "ISC",
