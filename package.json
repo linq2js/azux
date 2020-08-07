@@ -1,7 +1,7 @@
 {
   "name": "azux",
-  "version": "0.0.1",
-  "description": "100 lines of code state management that is inspired on unstated-next",
+  "version": "0.0.3",
+  "description": "A small state management that is inspired on unstated-next",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
   "scripts": {

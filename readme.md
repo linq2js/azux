@@ -100,3 +100,37 @@ function Component() {
   const count = useStore(CounterStore, (api) => api.count);
 }
 ```
+
+## Advanced Usages
+
+### Composing stores
+
+```jsx harmony
+const CountStore = (initial) => {
+  const [count, setCount] = useState(initial);
+  return {
+    count,
+    increase() {
+      setCount(count + 1);
+    },
+  };
+};
+
+const GreetingStore = (initial) => {
+  const [name, setName] = useState(initial);
+  return {
+    name,
+    updateName: setName,
+  };
+};
+
+const MainStore = ({ name, count } = {}) => {
+  // extend stores with initial values
+  const counter = useStore(CountStore, count);
+  const greeting = useStore(GreetingStore, name);
+  return {
+    ...counter,
+    ...greeting,
+  };
+};
+```

@@ -17,6 +17,10 @@ interface ProviderExports extends Function {
 
 interface UseStoreExports extends Function {
   <Store extends StoreBase<any, any>>(store: Store): StoreApiInfer<Store>;
+  <Store extends StoreBase<any, any>>(
+    store: Store,
+    initial: StoreInitialInfer<Store>
+  ): StoreApiInfer<Store>;
   <Store extends StoreBase<any, any>, MappedApi>(
     store: Store,
     selector: (api: StoreApiInfer<Store>) => MappedApi
