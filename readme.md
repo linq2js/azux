@@ -1,6 +1,6 @@
 # Azux
 
-100 lines of code state management that is inspired on unstated-next
+A small state management that is inspired on unstated-next
 
 ## Install
 
